@@ -15,16 +15,18 @@ Homework::Tasks Homework::assignment1()
     
     // Loo lambda funktsioon lamall, mis võtab argumendiks 2 arvu ja tagastab selle
     // Arv (Number) võib olla nii komaga kui ilma aga ei ole tekst või muu klassi objekt
-    
+    auto lamall = [](int a, int b){
+        return a+b;
+    };
 
     // Kasuta fun funktsiooni, et luua muutuja fun1, mis võtab argumendiks arvud 5 ja 6
-    
+    auto fun1 = fun<int, int>(5, 6);
 
     // Loo klass A instants, võttes argumendiks arvu 5.5 ja salvesta muutujasse a
-    
+    A<double> a(5.5);
     
     // Loo muutuja b, mis saadakse a funktsiooniga get_power_of_2
-    
+    auto b = a.get_power_of_2();
     
     // Kontroll, et muutujad on õiget tüüpi ja väärtusega
     Tasks results;
